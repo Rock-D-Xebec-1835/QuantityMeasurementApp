@@ -1,34 +1,141 @@
 {
   "units": [
-    { "id": 1, "type": "Length", "label": "Kilometer", "symbol": "km" },
-    { "id": 2, "type": "Length", "label": "Meter", "symbol": "m" },
-    { "id": 3, "type": "Length", "label": "Centimeter", "symbol": "cm" },
-
-    { "id": 4, "type": "Weight", "label": "Kilogram", "symbol": "kg" },
-    { "id": 5, "type": "Weight", "label": "Gram", "symbol": "g" },
-
-    { "id": 6, "type": "Temperature", "label": "Celsius", "symbol": "C" },
-    { "id": 7, "type": "Temperature", "label": "Fahrenheit", "symbol": "F" },
-
-    { "id": 8, "type": "Volume", "label": "Liter", "symbol": "L" },
-    { "id": 9, "type": "Volume", "label": "Milliliter", "symbol": "mL" }
+    {
+      "id": "1",
+      "type": "Length",
+      "label": "Kilometer",
+      "symbol": "km"
+    },
+    {
+      "id": "2",
+      "type": "Length",
+      "label": "Meter",
+      "symbol": "m"
+    },
+    {
+      "id": "3",
+      "type": "Length",
+      "label": "Centimeter",
+      "symbol": "cm"
+    },
+    {
+      "id": "4",
+      "type": "Weight",
+      "label": "Kilogram",
+      "symbol": "kg"
+    },
+    {
+      "id": "5",
+      "type": "Weight",
+      "label": "Gram",
+      "symbol": "g"
+    },
+    {
+      "id": "6",
+      "type": "Temperature",
+      "label": "Celsius",
+      "symbol": "C"
+    },
+    {
+      "id": "7",
+      "type": "Temperature",
+      "label": "Fahrenheit",
+      "symbol": "F"
+    },
+    {
+      "id": "8",
+      "type": "Volume",
+      "label": "Liter",
+      "symbol": "L"
+    },
+    {
+      "id": "9",
+      "type": "Volume",
+      "label": "Milliliter",
+      "symbol": "mL"
+    }
   ],
-
   "conversions": [
-    { "id": 1, "from": "km", "to": "m", "factor": 1000, "formula": null },
-    { "id": 2, "from": "m", "to": "km", "factor": 0.001, "formula": null },
-    { "id": 3, "from": "m", "to": "cm", "factor": 100, "formula": null },
-    { "id": 4, "from": "cm", "to": "m", "factor": 0.01, "formula": null },
-
-    { "id": 5, "from": "kg", "to": "g", "factor": 1000, "formula": null },
-    { "id": 6, "from": "g", "to": "kg", "factor": 0.001, "formula": null },
-
-    { "id": 7, "from": "C", "to": "F", "factor": null, "formula": "(x*9/5)+32" },
-    { "id": 8, "from": "F", "to": "C", "factor": null, "formula": "(x-32)*5/9" },
-
-    { "id": 9, "from": "L", "to": "mL", "factor": 1000, "formula": null },
-    { "id": 10, "from": "mL", "to": "L", "factor": 0.001, "formula": null }
+    {
+      "id": "1",
+      "from": "km",
+      "to": "m",
+      "factor": 1000,
+      "formula": null
+    },
+    {
+      "id": "2",
+      "from": "m",
+      "to": "km",
+      "factor": 0.001,
+      "formula": null
+    },
+    {
+      "id": "3",
+      "from": "m",
+      "to": "cm",
+      "factor": 100,
+      "formula": null
+    },
+    {
+      "id": "4",
+      "from": "cm",
+      "to": "m",
+      "factor": 0.01,
+      "formula": null
+    },
+    {
+      "id": "5",
+      "from": "kg",
+      "to": "g",
+      "factor": 1000,
+      "formula": null
+    },
+    {
+      "id": "6",
+      "from": "g",
+      "to": "kg",
+      "factor": 0.001,
+      "formula": null
+    },
+    {
+      "id": "7",
+      "from": "C",
+      "to": "F",
+      "factor": null,
+      "formula": "(x*9/5)+32"
+    },
+    {
+      "id": "8",
+      "from": "F",
+      "to": "C",
+      "factor": null,
+      "formula": "(x-32)*5/9"
+    },
+    {
+      "id": "9",
+      "from": "L",
+      "to": "mL",
+      "factor": 1000,
+      "formula": null
+    },
+    {
+      "id": "10",
+      "from": "mL",
+      "to": "L",
+      "factor": 0.001,
+      "formula": null
+    }
   ],
-
-  "history": []
+  "history": [
+    {
+      "id": "e5ca",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "5 km → m",
+      "result": 5000,
+      "timestamp": "2026-03-20T10:00:00Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
