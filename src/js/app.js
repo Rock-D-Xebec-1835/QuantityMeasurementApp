@@ -1,6 +1,6 @@
 import { getUnits, getConversion, getHistory, saveHistory } from "./api.js";
 import { applyConversion, compareValues, performArithmetic } from "./conversion.js";
-import { populateDropdown, setActive } from "./ui.js";
+import { populateDropdown, setActive, showResult } from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("App Initialized");
@@ -59,6 +59,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     toggleOperators(false);
     await loadHistory();
 
-    setActive(document.querySelector(".types"), document.querySelectorAll(".type-card")[0], ".type-card");
+    showResult(5, "mile");
 });
 

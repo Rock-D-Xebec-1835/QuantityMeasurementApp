@@ -40,3 +40,29 @@ export function setActive(parentEl, clickedEl, childSelector){
     // Add active for clicked element
     clickedEl.classList.add("active");
 }
+
+export function showResult(value, unitSymbol){
+    const valueEl = document.querySelector("#result-value");
+    const unitEl = document.querySelector("#result-unit");
+
+    if(!valueEl || !unitEl){
+        console.warn("Result elements not found");
+        return;
+    }
+
+    if(value === null || value === undefined){
+        valueEl.textContent = "-";
+        unitEl.textContent = "";
+        return;
+    }
+
+    // Set Result
+    valueEl.textContent = value;
+    unitEl.textContent = unitSymbol || "";
+
+    valueEl.classList.add("highlight");
+
+    setTimeout(() => {
+        valueEl.classList.remove("highlight");
+    }, 1500);
+}
