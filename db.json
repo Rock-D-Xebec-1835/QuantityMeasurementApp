@@ -1,141 +1,61 @@
 {
   "units": [
-    {
-      "id": "1",
-      "type": "Length",
-      "label": "Kilometer",
-      "symbol": "km"
-    },
-    {
-      "id": "2",
-      "type": "Length",
-      "label": "Meter",
-      "symbol": "m"
-    },
-    {
-      "id": "3",
-      "type": "Length",
-      "label": "Centimeter",
-      "symbol": "cm"
-    },
-    {
-      "id": "4",
-      "type": "Weight",
-      "label": "Kilogram",
-      "symbol": "kg"
-    },
-    {
-      "id": "5",
-      "type": "Weight",
-      "label": "Gram",
-      "symbol": "g"
-    },
-    {
-      "id": "6",
-      "type": "Temperature",
-      "label": "Celsius",
-      "symbol": "C"
-    },
-    {
-      "id": "7",
-      "type": "Temperature",
-      "label": "Fahrenheit",
-      "symbol": "F"
-    },
-    {
-      "id": "8",
-      "type": "Volume",
-      "label": "Liter",
-      "symbol": "L"
-    },
-    {
-      "id": "9",
-      "type": "Volume",
-      "label": "Milliliter",
-      "symbol": "mL"
-    }
+    { "id": "1", "type": "Length", "label": "Kilometer", "symbol": "km" },
+    { "id": "2", "type": "Length", "label": "Meter", "symbol": "m" },
+    { "id": "3", "type": "Length", "label": "Centimeter", "symbol": "cm" },
+    { "id": "10", "type": "Length", "label": "Millimeter", "symbol": "mm" },
+    { "id": "11", "type": "Length", "label": "Mile", "symbol": "mile" },
+    { "id": "12", "type": "Length", "label": "Foot", "symbol": "ft" },
+    { "id": "13", "type": "Length", "label": "Inch", "symbol": "inch" },
+
+    { "id": "4", "type": "Weight", "label": "Kilogram", "symbol": "kg" },
+    { "id": "5", "type": "Weight", "label": "Gram", "symbol": "g" },
+    { "id": "14", "type": "Weight", "label": "Milligram", "symbol": "mg" },
+    { "id": "15", "type": "Weight", "label": "Pound", "symbol": "lb" },
+    { "id": "16", "type": "Weight", "label": "Ounce", "symbol": "oz" },
+
+    { "id": "6", "type": "Temperature", "label": "Celsius", "symbol": "C" },
+    { "id": "7", "type": "Temperature", "label": "Fahrenheit", "symbol": "F" },
+    { "id": "17", "type": "Temperature", "label": "Kelvin", "symbol": "K" },
+
+    { "id": "8", "type": "Volume", "label": "Liter", "symbol": "L" },
+    { "id": "9", "type": "Volume", "label": "Milliliter", "symbol": "mL" },
+    { "id": "18", "type": "Volume", "label": "Cubic Meter", "symbol": "m3" }
   ],
+
   "conversions": [
-    {
-      "id": "1",
-      "from": "km",
-      "to": "m",
-      "factor": 1000,
-      "formula": null
-    },
-    {
-      "id": "2",
-      "from": "m",
-      "to": "km",
-      "factor": 0.001,
-      "formula": null
-    },
-    {
-      "id": "3",
-      "from": "m",
-      "to": "cm",
-      "factor": 100,
-      "formula": null
-    },
-    {
-      "id": "4",
-      "from": "cm",
-      "to": "m",
-      "factor": 0.01,
-      "formula": null
-    },
-    {
-      "id": "5",
-      "from": "kg",
-      "to": "g",
-      "factor": 1000,
-      "formula": null
-    },
-    {
-      "id": "6",
-      "from": "g",
-      "to": "kg",
-      "factor": 0.001,
-      "formula": null
-    },
-    {
-      "id": "7",
-      "from": "C",
-      "to": "F",
-      "factor": null,
-      "formula": "(x*9/5)+32"
-    },
-    {
-      "id": "8",
-      "from": "F",
-      "to": "C",
-      "factor": null,
-      "formula": "(x-32)*5/9"
-    },
-    {
-      "id": "9",
-      "from": "L",
-      "to": "mL",
-      "factor": 1000,
-      "formula": null
-    },
-    {
-      "id": "10",
-      "from": "mL",
-      "to": "L",
-      "factor": 0.001,
-      "formula": null
-    }
+    { "id": "1", "from": "km", "to": "m", "factor": 1000, "formula": null },
+    { "id": "2", "from": "m", "to": "km", "factor": 0.001, "formula": null },
+    { "id": "3", "from": "m", "to": "cm", "factor": 100, "formula": null },
+    { "id": "4", "from": "cm", "to": "m", "factor": 0.01, "formula": null },
+    { "id": "20", "from": "mm", "to": "m", "factor": 0.001, "formula": null },
+    { "id": "21", "from": "m", "to": "mm", "factor": 1000, "formula": null },
+    { "id": "22", "from": "mile", "to": "m", "factor": 1609.34, "formula": null },
+    { "id": "23", "from": "m", "to": "mile", "factor": 0.000621371, "formula": null },
+    { "id": "24", "from": "ft", "to": "m", "factor": 0.3048, "formula": null },
+    { "id": "25", "from": "m", "to": "ft", "factor": 3.28084, "formula": null },
+    { "id": "26", "from": "inch", "to": "m", "factor": 0.0254, "formula": null },
+    { "id": "27", "from": "m", "to": "inch", "factor": 39.3701, "formula": null },
+
+    { "id": "5", "from": "kg", "to": "g", "factor": 1000, "formula": null },
+    { "id": "6", "from": "g", "to": "kg", "factor": 0.001, "formula": null },
+    { "id": "28", "from": "mg", "to": "g", "factor": 0.001, "formula": null },
+    { "id": "29", "from": "g", "to": "mg", "factor": 1000, "formula": null },
+    { "id": "30", "from": "lb", "to": "kg", "factor": 0.453592, "formula": null },
+    { "id": "31", "from": "kg", "to": "lb", "factor": 2.20462, "formula": null },
+    { "id": "32", "from": "oz", "to": "g", "factor": 28.3495, "formula": null },
+    { "id": "33", "from": "g", "to": "oz", "factor": 0.035274, "formula": null },
+
+    { "id": "7", "from": "C", "to": "F", "factor": null, "formula": "(x*9/5)+32" },
+    { "id": "8", "from": "F", "to": "C", "factor": null, "formula": "(x-32)*5/9" },
+    { "id": "34", "from": "C", "to": "K", "factor": null, "formula": "x+273.15" },
+    { "id": "35", "from": "K", "to": "C", "factor": null, "formula": "x-273.15" },
+
+    { "id": "9", "from": "L", "to": "mL", "factor": 1000, "formula": null },
+    { "id": "10", "from": "mL", "to": "L", "factor": 0.001, "formula": null },
+    { "id": "36", "from": "m3", "to": "L", "factor": 1000, "formula": null },
+    { "id": "37", "from": "L", "to": "m3", "factor": 0.001, "formula": null }
   ],
-  "history": [
-    {
-      "id": "e5ca",
-      "type": "Length",
-      "action": "Conversion",
-      "expression": "5 km → m",
-      "result": 5000,
-      "timestamp": "2026-03-20T10:00:00Z"
-    }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+
+  "history": []
 }

@@ -1,3 +1,5 @@
+import {getUnits} from "./api.js";
+
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("App Initialized");
 
@@ -41,9 +43,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log("Loading History...");
     }
 
+    const units = await getUnits("Length");
+
     attachEventListeners();
     await loadUnits("Length");
     toggleOperators(false);
     await loadHistory();
+    console.log(units);
 });
 
