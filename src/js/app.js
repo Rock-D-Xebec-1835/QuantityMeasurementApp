@@ -1,5 +1,6 @@
-import {applyConversion, compareValues, getConversion, getHistory, getUnits, performArithmetic, saveHistory} from "./api.js";
-import { populateDropdown } from "./ui.js";
+import { getUnits, getConversion, getHistory, saveHistory } from "./api.js";
+import { applyConversion, compareValues, performArithmetic } from "./conversion.js";
+import { populateDropdown, setActive } from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("App Initialized");
@@ -58,7 +59,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     toggleOperators(false);
     await loadHistory();
 
-    populateDropdown(fromSelect, units)
-    
+    setActive(document.querySelector(".types"), document.querySelectorAll(".type-card")[0], ".type-card");
 });
 

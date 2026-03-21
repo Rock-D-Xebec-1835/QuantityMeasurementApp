@@ -77,7 +77,7 @@ body{
 
 /* CARD HOVER */
 .cards:hover{
-    background:#e6e7e7;
+    /* background:#e6e7e7; */
     color: #2c2929;
     transform:translateY(-5px);
     box-shadow:0px 8px 20px rgba(0,0,0,0.4);
@@ -190,7 +190,27 @@ body{
     color:#d4d4d4;
 }
 
-/* .active{
+.active{
     background:#e6e7e7 !important;
     color:#2c2929 !important;
-} */
+    transform:translateY(-5px);
+    box-shadow:0px 8px 20px rgba(0,0,0,0.4);
+}
+
+.active:hover{
+    color:#2c2929;
+}
+
+.cards i{
+    color:#e6e7e7;
+}
+
+.cards:hover i{
+    color: #2c2929;
+    transform:scale(1.2);
+}
+
+.cards.active i{
+    color: #2c2929;
+    transform:scale(1.2);
+}

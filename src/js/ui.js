@@ -8,7 +8,7 @@ export function populateDropdown(selectEl, units){
 
     // Default options
     const defaultOption = document.createElement("option");
-    defaultOption.textContent = "== Select Unit ==";
+    defaultOption.textContent = "======= Select Unit =======";
     defaultOption.disabled = true;
     defaultOption.selected = true;
     selectEl.appendChild(defaultOption);
@@ -25,4 +25,18 @@ export function populateDropdown(selectEl, units){
         opt.textContent = `${u.label} (${u.symbol})`;
         selectEl.appendChild(opt);
     });
+}
+
+export function setActive(parentEl, clickedEl, childSelector){
+    if(!parentEl){
+        console.warn("Parent element not found");
+    }
+
+    // Remove active from all the siblings
+    parentEl.querySelectorAll(childSelector).forEach(el =>{
+        el.classList.remove("active");
+    });
+
+    // Add active for clicked element
+    clickedEl.classList.add("active");
 }
