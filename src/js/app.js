@@ -1,4 +1,4 @@
-import {getConversion, getUnits, saveHistory} from "./api.js";
+import {getConversion, getHistory, getUnits, saveHistory} from "./api.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("App Initialized");
@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log("Loading History...");
     }
 
-    // const history = await getHistory();
-    // console.log("History: ", history)
+    const history = await getHistory();
+    console.log("History: ", history)
 
     attachEventListeners();
     await loadUnits("Length");

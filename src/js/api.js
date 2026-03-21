@@ -55,20 +55,20 @@ export async function saveHistory(record) {
     }
 }
 
-// export async function getHistory(){
-//     try{
-//         const res = await fetch(`${BASE_URL}/history`);
-//         if(!res.ok){
-//             throw new Error(`HTTP${res.status}`);
-//         }
+export async function getHistory(){
+    try{
+        const res = await fetch(`${BASE_URL}/history`);
+        if(!res.ok){
+            throw new Error(`HTTP${res.status}`);
+        }
 
-//         const data = await res.json();
-//         return data.sort((a, b) => 
-//             new Date(b.timestamp) - new Date(a.timestamp)
-//         );
-//     }
-//     catch(error){
-//         console.error("Error fetching History:", error);
-//         return []; // return empty so that UI doesnt break
-//     }
-// }
+        const data = await res.json();
+        return data.sort((a, b) => 
+            new Date(b.timestamp) - new Date(a.timestamp)
+        );
+    }
+    catch(error){
+        console.error("Error fetching History:", error);
+        return []; // return empty so that UI doesnt break
+    }
+}
