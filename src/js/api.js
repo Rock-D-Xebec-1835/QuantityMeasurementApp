@@ -37,3 +37,38 @@ export async function getConversion(from, to){
         throw error;
     }
 }
+
+export async function saveHistory(record) {
+    try{
+        const res = await fetch(`${BASE_URL}/history`,{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(record)
+        });
+
+        return await res.json();
+    }
+    catch(error){
+        console.error("Error saving history:", error);
+    }
+}
+
+// export async function getHistory(){
+//     try{
+//         const res = await fetch(`${BASE_URL}/history`);
+//         if(!res.ok){
+//             throw new Error(`HTTP${res.status}`);
+//         }
+
+//         const data = await res.json();
+//         return data.sort((a, b) => 
+//             new Date(b.timestamp) - new Date(a.timestamp)
+//         );
+//     }
+//     catch(error){
+//         console.error("Error fetching History:", error);
+//         return []; // return empty so that UI doesnt break
+//     }
+// }
