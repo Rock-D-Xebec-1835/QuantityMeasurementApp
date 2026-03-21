@@ -1,4 +1,5 @@
 import {applyConversion, compareValues, getConversion, getHistory, getUnits, performArithmetic, saveHistory} from "./api.js";
+import { populateDropdown } from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("App Initialized");
@@ -27,8 +28,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     async function loadUnits(type) {
-        console.log("Loading units for:", type);
-        // Implementation
+        try{
+            const units = await getUnits(type);
+            populateDropdown(fromSelect,units);
+            populateDropdown(toSelect,units);
+        }
+        catch(error){
+            console.error("Failed to load units:", error);
+        }
     }
 
     state.type = "Length";
@@ -51,8 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     toggleOperators(false);
     await loadHistory();
 
-    console.log(performArithmetic(10,5, "+"));
-    console.log(performArithmetic(10, 0, "/"));
+    populateDropdown(fromSelect, units)
     
 });
 
