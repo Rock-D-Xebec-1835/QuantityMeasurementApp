@@ -1,4 +1,4 @@
-import {applyConversion, compareValues, getConversion, getHistory, getUnits, saveHistory} from "./api.js";
+import {applyConversion, compareValues, getConversion, getHistory, getUnits, performArithmetic, saveHistory} from "./api.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("App Initialized");
@@ -51,9 +51,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     toggleOperators(false);
     await loadHistory();
 
-    console.log(compareValues(5, "km", 3000, "m", 5000, 3000));
-
-    console.log(compareValues(2, "kg", 2000, "g", 2, 2));
+    console.log(performArithmetic(10,5, "+"));
+    console.log(performArithmetic(10, 0, "/"));
     
 });
 

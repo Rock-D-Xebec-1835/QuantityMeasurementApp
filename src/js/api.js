@@ -114,3 +114,25 @@ export function compareValues(v1, u1, v2, u2, base1, base2){
     // Equal to
     return `${v1} ${u1} is EQUAL to ${v2} ${u2}`;
 }
+
+export function performArithmetic(v1, v2norm, op){
+    if(!Number.isFinite(v1) || !Number.isFinite(v2norm)){
+        throw new Error("Invalid Number");
+    }
+
+    switch(op){
+        case "+":
+            return parseFloat((v1 + v2norm).toFixed(6));
+        case "-":
+            return parseFloat((v1 - v2norm).toFixed(6));
+        case "*":
+            return parseFloat((v1 * v2norm).toFixed(6));
+        case "/":
+            if(v2norm == 0){
+                throw new Error("Divide by zero");
+            }
+            return parseFloat((v1 / v2norm).toFixed(6));
+        default:
+            throw new Error("Unknown operator");
+    }
+}
