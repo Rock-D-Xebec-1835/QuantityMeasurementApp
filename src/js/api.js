@@ -72,3 +72,29 @@ export async function getHistory(){
         return []; // return empty so that UI doesnt break
     }
 }
+
+export function applyConversion(value, convObj){
+    // Invalid number case
+    if(!Number.isFinite(value)){
+        throw new Error("Invalid number");
+    }
+
+    // same unit case
+    if(!convObj){
+        return value;
+    }
+    // factor-based conversion
+    if(convObj.factor !== null){
+        return parseFloat((value * convObj.factor).toFixed(6));
+    }
+    // formula based conversion
+    try{
+        const expr = convObj.formula.replace("x", value);
+        const result = eval(expr);
+
+        return parseFloat(result.toFixed(6));
+    }
+    catch(error){
+        throw new Error("Bad formula");
+    }
+}

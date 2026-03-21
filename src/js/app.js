@@ -1,4 +1,4 @@
-import {getConversion, getHistory, getUnits, saveHistory} from "./api.js";
+import {applyConversion, getConversion, getHistory, getUnits, saveHistory} from "./api.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("App Initialized");
@@ -51,5 +51,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     toggleOperators(false);
     await loadHistory();
 
+    const conv = await getConversion("km", "m");
+    console.log(applyConversion(10,conv)); //10000
+
+    const tempConv = await getConversion("C", "F");
+    console.log(applyConversion(0, tempConv)); //32
+    
 });
 
