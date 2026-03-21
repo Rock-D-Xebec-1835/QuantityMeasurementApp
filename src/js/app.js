@@ -1,4 +1,4 @@
-import {getUnits} from "./api.js";
+import {getConversion, getUnits} from "./api.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("App Initialized");
@@ -43,12 +43,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log("Loading History...");
     }
 
-    const units = await getUnits("Length");
+    const units = await getUnits("Length"); //temp
+    const conv = await getConversion("km", "m"); //temp
 
     attachEventListeners();
     await loadUnits("Length");
     toggleOperators(false);
     await loadHistory();
-    console.log(units);
+    console.log(units); //temp
+    console.log(conv); //temp
 });
 
