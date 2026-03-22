@@ -49,6 +49,20 @@ document.addEventListener("DOMContentLoaded", async () => {
                 }
             });
         });
+
+        const actionContainer = document.querySelector(".buttons");
+        actionButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                // Update state
+                state.action = btn.dataset.action;
+                // set active UI
+                setActive(actionContainer, btn, ".action-btn");
+                // toggle operators (only for arithmetic operations)
+                toggleOperators(state.action === "Arithmetic");
+                // show result
+                showResult(0,"");
+            });
+        });
     }
 
     async function loadUnits(type) {
