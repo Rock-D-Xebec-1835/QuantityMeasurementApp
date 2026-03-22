@@ -77,3 +77,40 @@ export function toggleOperators(show){
     // Show/Hide
     el.style.display = show ? "flex" : "none";
 }
+
+export function renderHistory(records){
+    const list = document.querySelector("#history-list");
+
+    if(!list){
+        console.warn("Hisory list element not found");
+    }
+
+    if(!records){
+        records = [];
+    }
+    // Clear existing records first. WHY?
+    // Bcos getHistory() fetches entire history
+    // and renderHistory() should rebuild entire records from scratch
+    list.innerHTML = "";
+
+    if(!records.length){
+        list.innerHTML = "<li>No History.</li>";
+        return;
+    }
+
+    // Populate list
+    records.forEach(r => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <div class="history-top">
+                <span class="history-action">${r.action}</span>
+                <span class="history-expression">${r.expression} = ${r.result}</span>
+            </div>
+            <div class="history-time">
+                ${new Date(r.timestamp).toLocaleString()}
+            </div>
+        `;
+        list.appendChild(li);
+    });
+
+}

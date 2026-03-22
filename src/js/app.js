@@ -1,6 +1,6 @@
 import { getUnits, getConversion, getHistory, saveHistory } from "./api.js";
 import { applyConversion, compareValues, performArithmetic } from "./conversion.js";
-import { populateDropdown, setActive, showResult } from "./ui.js";
+import { populateDropdown, renderHistory, setActive, showResult } from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("App Initialized");
@@ -61,5 +61,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     showResult(5, "mile");
     toggleOperators(true);
+
+    renderHistory([
+        {
+            action: "Conversion",
+            expression: "5 km -> m",
+            result: 5000,
+            timestamp: new Date().toISOString()
+        }
+    ]);
 });
 
