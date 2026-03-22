@@ -307,5 +307,287 @@
       "formula": null
     }
   ],
-  "history": []
+  "history": [
+    {
+      "id": "8902",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> m",
+      "result": 1609.34,
+      "timestamp": "2026-03-22T09:47:30.301Z"
+    },
+    {
+      "id": "4d71",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> m",
+      "result": 1609.34,
+      "timestamp": "2026-03-22T09:47:36.700Z"
+    },
+    {
+      "id": "1c68",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T10:07:10.438Z"
+    },
+    {
+      "id": "8605",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T10:09:40.794Z"
+    },
+    {
+      "id": "5e21",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T10:11:06.907Z"
+    },
+    {
+      "id": "f9d8",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T10:11:56.993Z"
+    },
+    {
+      "id": "2724",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T10:17:29.441Z"
+    },
+    {
+      "id": "eb28",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T10:22:44.425Z"
+    },
+    {
+      "id": "1b45",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T10:26:23.356Z"
+    },
+    {
+      "id": "d5f6",
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "1 m vs 1 m",
+      "result": "1 m is EQUAL to 1 m",
+      "timestamp": "2026-03-22T10:31:45.904Z"
+    },
+    {
+      "id": "b1a4",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 mile -> m",
+      "result": 3218.68,
+      "timestamp": "2026-03-22T10:46:43.816Z"
+    },
+    {
+      "id": "aa29",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T10:47:04.888Z"
+    },
+    {
+      "id": "0232",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T10:59:28.524Z"
+    },
+    {
+      "id": "1a58",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T10:59:51.970Z"
+    },
+    {
+      "id": "defd",
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "1 m + 1 m",
+      "result": 2,
+      "timestamp": "2026-03-22T11:00:09.901Z"
+    },
+    {
+      "id": "52e8",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:08:27.693Z"
+    },
+    {
+      "id": "1dc0",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:13:41.780Z"
+    },
+    {
+      "id": "c9be",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:14:07.660Z"
+    },
+    {
+      "id": "a4b2",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:21:49.947Z"
+    },
+    {
+      "id": "6148",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:23:27.123Z"
+    },
+    {
+      "id": "35aa",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 km -> mile",
+      "result": 0.621371,
+      "timestamp": "2026-03-22T11:24:05.379Z"
+    },
+    {
+      "id": "1789",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:24:25.451Z"
+    },
+    {
+      "id": "cd78",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:25:17.620Z"
+    },
+    {
+      "id": "4723",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:26:43.764Z"
+    },
+    {
+      "id": "9c30",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:27:41.921Z"
+    },
+    {
+      "id": "4a66",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:33:04.442Z"
+    },
+    {
+      "id": "5e27",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:36:18.035Z"
+    },
+    {
+      "id": "3aaa",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:36:56.572Z"
+    },
+    {
+      "id": "871a",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 km -> m",
+      "result": 1000,
+      "timestamp": "2026-03-22T11:37:12.593Z"
+    },
+    {
+      "id": "d791",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:38:27.129Z"
+    },
+    {
+      "id": "7d9d",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:43:11.005Z"
+    },
+    {
+      "id": "f59c",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:44:38.181Z"
+    },
+    {
+      "id": "e632",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:53:59.979Z"
+    },
+    {
+      "id": "1573",
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "1 mile -> km",
+      "result": 1.60934,
+      "timestamp": "2026-03-22T11:59:22.117Z"
+    },
+    {
+      "id": "eef3",
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "1 m + 1 m",
+      "result": 2,
+      "timestamp": "2026-03-22T12:03:32.846Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

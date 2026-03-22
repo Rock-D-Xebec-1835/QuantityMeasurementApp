@@ -45,6 +45,8 @@ export function showResult(value, unitSymbol){
     const valueEl = document.querySelector("#result-value");
     const unitEl = document.querySelector("#result-unit");
 
+    console.log("showResult called with:", value, unitSymbol); // ADD THIS
+
     if(!valueEl || !unitEl){
         console.warn("Result elements not found");
         return;
@@ -56,14 +58,15 @@ export function showResult(value, unitSymbol){
         return;
     }
 
-    // Set Result
     valueEl.textContent = value;
     unitEl.textContent = unitSymbol || "";
+    
+    console.log("Result set to:", valueEl.textContent); // ADD THIS
 
     valueEl.classList.add("highlight");
-
     setTimeout(() => {
         valueEl.classList.remove("highlight");
+        console.log("Highlight removed, text is now:", valueEl.textContent); // ADD THIS
     }, 1500);
 }
 
