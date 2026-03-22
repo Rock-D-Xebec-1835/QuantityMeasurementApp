@@ -24,8 +24,31 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
     function attachEventListeners(){
-        console.log("Listeners Attached");
-        // logic
+        const typeContainer = document.querySelector(".types");
+        typeCards.forEach(card => {
+            card.addEventListener("click", async () => {
+                try{
+                    // updating state
+                    state.type = card.dataset.type;
+                    // set active UI
+                    setActive(typeContainer, card, ".type-card");
+                    // Clear input and results
+                    fromInput.value = "";
+                    showResult(0,"");
+                    // Fetch units
+                    const units = await getUnits(state.type);
+                    // Populate dropdowns
+                    populateDropdown(fromSelect, units);
+                    populateDropdown(toSelect, units);
+                    // Reset selected units in state
+                    state.fromUnit = "";
+                    state.toUnit = "";
+                }
+                catch(error){
+                    console.error("Failed to load units:", error);
+                }
+            });
+        });
     }
 
     async function loadUnits(type) {
