@@ -60,5 +60,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     await loadHistory();
 
     showResult(5, "mile");
+    toggleOperators(true);
 });
 
